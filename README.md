@@ -6,6 +6,14 @@ Built entirely on **Databricks**, this project demonstrates how to handle dynami
 
 ---
 
+## 📂 Repository Structure
+
+* **`transformation/`** ➡️ **The core production pipeline.** This folder contains the Spark Declarative Pipeline (Lakeflow / DLT) scripts that process data through the Bronze, Silver, and Gold Medallion layers. 
+* **`explorations/`** ➡️ **Sandbox and analysis.** Contains notebooks used for ad-hoc API payload testing, schema discovery, and data profiling. These scripts are strictly for analysis and are not executed by the automated workflow.
+* **`API_Notebook.ipynb`** ➡️ **The ingestion engine.** The Python script responsible for handling API pagination and landing raw JSON data into Databricks Volumes.
+
+---
+
 ## 🚀 How It Works (The Pipeline Orchestration)
 
 This project is fully automated and orchestrated using **Databricks Workflows**. The workflow is configured to run sequentially in two main tasks:
