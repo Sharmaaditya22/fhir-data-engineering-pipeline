@@ -20,7 +20,10 @@ The workflow first triggers the `FHIR API File/API_Notebook.ipynb` script.
 Once the API extraction is successful, the workflow triggers the Spark Declarative Pipeline (Lakeflow/DLT) to process the data through the Medallion Architecture.
 
 *(Attach your Databricks Workflow and DLT DAG screenshots below)*
+Databricks Workflow
 ![Workflow design](https://github.com/Sharmaaditya22/fhir-data-engineering-pipeline/blob/d8aa132f6938df4be322f09b18e8580e422536e9/png%20files/workflow_design.png)
+
+Delta Live Tables
 ![DLT design](https://github.com/Sharmaaditya22/fhir-data-engineering-pipeline/blob/d8aa132f6938df4be322f09b18e8580e422536e9/png%20files/lakeflow_job.png)
 
 ---
